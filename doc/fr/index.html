@@ -1,8 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="fr">
 <head>
-    <title>LuaSQL: Database connectivity for the Lua programming language</title>
+    <title>LuaSQL: Connection aux bases de données pour le language de programmation Lua</title>
     <link rel="stylesheet" href="doc.css" type="text/css"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
@@ -15,7 +15,7 @@
 		<img alt="LuaSQL logo" src="luasql.png"/>
 	</a></div>
 	<div id="product_name"><big><strong>LuaSQL</strong></big></div>
-	<div id="product_description">Database connectivity for the Lua programming language</div>
+	<div id="product_description">Connection aux bases de données pour le language de programmation Lua</div>
 </div> <!-- id="product" -->
 
 <div id="main">
@@ -25,41 +25,34 @@
 	<ul>
 		<li><strong>Home</strong>
 			<ul>
-				<li><a href="index.html#overview">Overview</a></li>
-				<li><a href="index.html#status">Status</a></li>
-				<li><a href="index.html#download">Download</a></li>
-				<li><a href="index.html#credits">Credits</a></li>
-				<li><a href="index.html#contact">Contact us</a></li>
+				<li><a href="index.html#overview">Vue d'ensemble</a></li>
+				<li><a href="index.html#status">Statut</a></li>
+				<li><a href="index.html#download">Téléchargement/a></li>
+				<li><a href="index.html#credits">Crédits</a></li>
+				<li><a href="index.html#contact">Contactez-nous</a></li>
 			</ul>
 		</li>
-		<li><a href="manual.html">Manual</a>
+		<li><a href="manual.html">Manuel</a>
 			<ul>
 				<li><a href="manual.html#introduction">Introduction</a></li>
-				<li><a href="manual.html#compiling">Compiling</a></li>
+				<li><a href="manual.html#compiling">Compilation</a></li>
 				<li><a href="manual.html#installation">Installation</a></li>
-				<li><a href="manual.html#errors">Error handling</a></li>
-				<li><a href="manual.html#drivers">Drivers</a></li>
-				<li><a href="manual.html#environment_object">Environment</a></li>
+				<li><a href="manual.html#errors">Gestion des erreurs</a></li>
+				<li><a href="manual.html#drivers">Pilotes</a></li>
+				<li><a href="manual.html#environment_object">Environnement</a></li>
 				<li><a href="manual.html#connection_object">Connection</a></li>
-				<li><a href="manual.html#cursor_object">Cursor</a></li>
+				<li><a href="manual.html#cursor_object">Curseur</a></li>
 				<li><a href="manual.html#postgres_extensions">PostgreSQL</a></li>
 				<li><a href="manual.html#mysql_extensions">MySQL</a></li>
 				<li><a href="manual.html#oracle_extensions">Oracle</a></li>
 				<li><a href="manual.html#sqlite3_extensions">SQLite3</a></li>
 			</ul>
 		</li>
-		<li><a href="examples.html">Examples</a></li>
-		<li><a href="history.html">History</a></li>
-<<<<<<< HEAD
-        <li><a href="http://luaforge.net/projects/luasql/">Project</a>
+		<li><a href="examples.html">Exemples</a></li>
+		<li><a href="history.html">Historique</a></li>
+        <li><a href="http://github.com/keplerproject/luasql/">Projet</a>
             <ul>
-                <li><a href="http://luaforge.net/tracker/?group_id=12">Bug Tracker</a></li>
-                <li><a href="http://luaforge.net/scm/?group_id=12">CVS</a></li>
-=======
-        <li><a href="http://github.com/keplerproject/luasql/">Project</a>
-            <ul>
-                <li><a href="http://github.com/keplerproject/luasql/issues">Issues</a></li>
->>>>>>> master
+                <li><a href="http://github.com/keplerproject/luasql/issues">Problèmes</a></li>
             </ul>
         </li>
 		<li><a href="license.html">License</a></li>
@@ -68,41 +61,34 @@
 
 <div id="content">
 
-<h2><a name="overview"></a>Overview</h2>
+<h2><a name="overview"></a>Vue d'ensemble</h2>
 
 <p>
-LuaSQL is a simple interface from Lua to a DBMS. It enables a Lua program to:
+LuaSQL est une simple interface de Lua à un <a href="https://fr.wikipedia.org/wiki/Sgbd">SGBD</a>. Cela permet à un programme Lua de :
 </p>
 
 <ul>
-	<li> Connect to ODBC, ADO, Oracle, MySQL, SQLite, Firebird and PostgreSQL databases;</li>
-	<li> Execute arbitrary SQL statements;</li>
-	<li> Retrieve results in a row-by-row cursor fashion.</li>
+	<li> Se connecter au base de données ODBC, ADO, Oracle, MySQL, SQLite, Firebird et PostgreSQL;</li>
+	<li> Exécuter des instructions SQL arbitraires;</li>
+	<li> Obtenir des résultats ligne par ligne avec curseur.</li>
 </ul>
 
 <p>
-LuaSQL is free software and uses the same <a href="license.html">license</a>
-as Lua 5.1.
+LuaSQL est un logiciel libre et utilise la même <a href="license.html">licence</a> 
+que celle de Lua 5.1.
 </p>
 
-<h2><a name="status"></a>Status</h2>
+<h2><a name="status"></a>Statut</h2>
 
 <p>
-LuaSQL version 2.3.0 (for Lua 5.X) is now available for <a href="#download">download</a>.
-For more details on the features list please check the product
-<a href="history.html">history</a>.
+LuaSQL version 2.3.0 (pour Lua 5.X) est maintenant disponile au  <a href="#download">téléchargement</a>.
+Pour plus de détails sur la liste des fonctionnalités merci de vérifier l'<a href="history.html">historique</a> du produit.
 </p>
 
-<h2><a name="download"></a>Download</h2>
+<h2><a name="download"></a>Téléchargement</h2>
 <p>
-<<<<<<< HEAD
-Source code for LuaSQL can be downloaded from the <a href=
-"http://luaforge.net/project/showfiles.php?group_id=12">LuaForge</a> page.  If you are using
-<a href="http://luaforge.net/projects/luabinaries/">LuaBinaries</a> a Windows binary
-version of LuaSQL can be found at the same LuaForge page. 
-=======
-LuaSQL can be installed via <a href="http://luarocks.org">LuaRocks</a>, using the 
-driver for your database of choice:
+LuaSQL peut être installé via <a href="http://luarocks.org">LuaRocks</a>, en utilisant
+le pilote de la base de donnée de votre choix :
 
 <pre>
 luarocks install luasql-sqlite3
@@ -112,53 +98,45 @@ luarocks install luasql-sqlite
 luarocks install luasql-odbc
 </pre>
 
-Source code for LuaSQL can be downloaded from its <a href=
-"http://github.com/keplerproject/luasql">GitHub</a> repository.
->>>>>>> master
+Le code source pour LuaSQL peut être téléchargé à partir de son dépot <a href=
+"http://github.com/keplerproject/luasql">GitHub</a>.
 </p>
 
-<h2><a name="credits"></a>Credits</h2>
+<h2><a name="credits"></a>Crédits</h2>
 
 <h4>LuaSQL 2.x</h4>
 <p>
-Version 2.3 is just an adaptation of the code to work with Lua 5.0, 5.1 and 5.2.
+La version 2.3 est juste une adaptation du code pour fonctionner avec Lua 5.0, 5.1 and 5.2.
 </p>
 <p>
-<<<<<<< HEAD
-Version 2.2 started a distributed development, with all project discussions happenign through the <a href="http://luaforge.net/mail/?group_id=104">Kepler's mailing list</a>.
-=======
-Version 2.2 started a distributed development, with all project discussions happenign through the <a href="https://groups.google.com/forum/#!forum/kepler-project">Kepler's mailing list</a>.
->>>>>>> master
-New developers: Hisham Muhammad, Ignacio Burgue&ntilde;o, Luis Eduardo Jason Santos, Marc Nijdam, Mauricio Bomfim and Scott Morgan.
+La version 2.2 a initiée un développement distribué, 
+avec toutes les discussions passant par la <a href="https://groups.google.com/forum/#!forum/kepler-project">liste de diffusion du projet Kepler</a>.
+Nouveaux développeurs : Hisham Muhammad, Ignacio Burgue&ntilde;o, Luis Eduardo Jason Santos, Marc Nijdam, Mauricio Bomfim and Scott Morgan.
 <p>
-Version 2.1 and 2.0 were redesigned by Roberto Ierusalimschy, Andr&eacute; Carregal
-and Tom&aacute;s Guisasola as part of the
-<a href="http://www.keplerproject.org">Kepler Project</a>.
-The implementation was coded by
-Tom&aacute;s Guisasola, Eduardo Quint&atilde;o, Thiago Ponte, Fabio Mascarenhas and
-Danilo Tuler, with many contributions from Michael Broughton, Tiago Dionizio, Leonardo Godinho, Pedro Maia, Klaus Ripke, Michael Roth and others.</p>
+La Version 2.1 et 2.0 ont été remaniées par Roberto Ierusalimschy, Andr&eacute; Carregal
+et Tom&aacute;s Guisasola dans le cadre du
+<a href="http://www.keplerproject.org">Projet Kepler</a>.
+L'implementation a été codée par
+Tom&aacute;s Guisasola, Eduardo Quint&atilde;o, Thiago Ponte, Fabio Mascarenhas et
+Danilo Tuler, avec de nombreuses contributions de Michael Broughton, Tiago Dionizio, Leonardo Godinho, Pedro Maia, Klaus Ripke, Michael Roth et bien d'autres.</p>
 
 <h4>LuaSQL 1.0</h4>
 
-<p>LuaSQL was originally designed by Pedro Miller Rabinovitch and Roberto Ierusalimschy.
-The first implementation was compatible with Lua 4.0a.
-Many modifications were made but not distributed by Diego Nehab (ODBC),
-Carlos Cassino, Tom&aacute;s Guisasola and Eduardo Quint&atilde;o (PostgreSQL).</p>
+<p>LuaSQL a été initialement conçu par Pedro Miller Rabinovitch et Roberto Ierusalimschy.
+La première implementation était compatible avec Lua 4.0a.
+Beaucoup de modifications ont été apportées, mais non distribuées par Diego Nehab (ODBC),
+Carlos Cassino, Tom&aacute;s Guisasola et Eduardo Quint&atilde;o (PostgreSQL).</p>
 
-<p>LuaSQL development was sponsored by 
-<a href="http://www.fabricadigital.com.br">F&aacute;brica Digital</a>, FINEP and CNPq.</p>
+<p>Le développement de LuaSQL a été sponsorisé par 
+<a href="http://www.fabricadigital.com.br">F&aacute;brica Digital</a>, FINEP et CNPq.</p>
 
-<h2><a name="contact"></a>Contact us</h2>
+<h2><a name="contact"></a>Contactez-nous</h2>
 
-<p>For more information please <a href="mailto:info-NO-SPAM-THANKS@keplerproject.org">contact us</a>.
-Comments are welcome!</p>
+<p>Pour plus d'informations merci de <a href="mailto:info-NO-SPAM-THANKS@keplerproject.org">nous contacter</a>.
+Les commentaires sont les bienvenus!</p>
 
-<p>You can also reach other Kepler developers and users on the Kepler Project
-<<<<<<< HEAD
-<a href="http://luaforge.net/mail/?group_id=104">mailing list</a>.</p>
-=======
-<a href="https://groups.google.com/forum/#!forum/kepler-project">mailing list</a>.</p>
->>>>>>> master
+<p>Vous pouvez également rejoindre d'autres développeurs et utilisateurs du Projet Kepler sur la
+ <a href="https://groups.google.com/forum/#!forum/kepler-project">liste de diffusion</a> du projet Kepler.</p>
 
 </div> <!-- id="content" -->
 
