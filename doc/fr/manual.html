@@ -121,17 +121,17 @@ Par conséquent des erreurs peuvent se produire sur les deux niveaux, c'est &agr
 </p>
 <p>
 Les erreurs telles que des instructions SQL malformées, des noms de table inconnues, etc.
-sont appelées <em>database errors</em> et
-seront signalés par la fonction/méthode retournant <code>nil</code> suivie
+sont appelées <em>erreures de base de données</em> et
+seront signalées par la fonction/méthode retournant <code>nil</code> suivie
 par le message d'erreur fourni par le système de base de données.
 
 Les erreurs telles que des paramètres erronés, des connexion manquantes, des objets invalides, etc.
-sont appelées <em>API errors</em>,
-sont généralement des erreurs de programme et seront remonté par une erreur Lua.
+sont appelées <em>erreures API</em>,
+sont généralement des erreurs de programme et seront remontées par une erreur Lua.
 </p>
 <p>
-This behavior will be followed by all functions/methods
-described in this document unless otherwise stated.
+Ce comportement sera suivi par toutes les fonctions/méthodes
+décrites dans le présent document, sauf indication contraire.
 </p>
 
 <h2><a name="drivers"></a>Pilotes</h2>
