@@ -93,13 +93,13 @@ as Lua 5.1.
 
 <h2><a name="compiling"></a>Compilation</h2>
 
-<p>LuaSQL is distributed as a set of C source files:
-a pair of common source and header files (<code>luasql.h</code> and <code>luasql.c</code>);
-and one source file for each driver.
-Each driver should be compiled with the luasql.c file to generate a library.
-This library can be linked to the application or dynamically loaded. 
-The initialization function is <code>luaopen_luasql<em>drivername</em></code> and it is a Lua
-<a href="http://www.lua.org/manual/5.1/manual.html#pdf-require"><code>open-library</code></a> compatible function.
+<p>LuaSQL est distribué comme un ensemble de fichiers de code source en C :
+un duo de fichier ent&egrave;te et commun (<code>luasql.h</code> et <code>luasql.c</code>);
+et un fichier source pour chaque pilote.
+Chaque pilote doit être compilé avec le fichier luasql.c pour générer une bibliothèque.
+Cette bibliothèque peut être liée à l'application ou chargée dynamiquement.
+La fonction d'initialisation est <code>luaopen_luasql<em>drivername</em></code> et elle est compatible avec la fonction Lua de
+<a href="http://www.lua.org/manual/5.1/manual.html#pdf-require"><code>chargement de bibliothèque</code></a>.
 </p>
 
 <h2><a name="installation"></a>Installation</h2>
