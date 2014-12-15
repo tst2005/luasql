@@ -104,29 +104,30 @@ La fonction d'initialisation est <code>luaopen_luasql<em>drivername</em></code> 
 
 <h2><a name="installation"></a>Installation</h2>
 
-<p>Since version 2.3, all LuaSQL drivers follow the package model of Lua 5.2.
-All drivers should be "installed" in your <code>package.cpath</code> into a
-folder called <code>luasql</code>.</p>
+<p>Depuis la version 2.3, tous les pilotes LuaSQL suivent le modèle de paquet de Lua 5.2.
+Tous les pilotes doivent être "installées" dans votre <code>package.cpath</code> dans un
+dossier appelé <code>luasql</code>.</p>
 
-<p>In order to use LuaSQL with ADO, make sure that you have installed
+<p>Pour utiliser LuaSQL avec ADO, assurez-vous d'avoir installé
  <a href="http://www.tecgraf.puc-rio.br/~rcerq/luacom">LuaCOM 1.3</a>
- for the appropriate version of Lua.</p>
+ pour la version appropriée de Lua.</p>
 
 <h2><a name="errors"></a>Gestion des erreurs</h2>
 <p>
-LuaSQL is just an abstraction layer that communicates between Lua
-and a database system.
-Therefore errors can occur on both levels, that is,
-inside the database client or inside LuaSQL driver.
+LuaSQL est juste une couche d'abstraction qui communique entre Lua
+et un système de base de données
+Par conséquent des erreurs peuvent se produire sur les deux niveaux, c'est &agrave; dire,
+&agrave; l'intérieur du client de base de données ou &agrave; l'intérieur du pilote LuaSQL
 </p>
 <p>
-Errors such as malformed SQL statements, unknown table names etc.
-are called <em>database errors</em> and
-will be reported by the function/method returning <code>nil</code> followed
-by the error message provided by the database system.
-Errors such as wrong parameters, absent connection, invalid objects etc.,
-called <em>API errors</em>,
-are usually program errors and so will raise a Lua error.
+Les erreurs telles que des instructions SQL malformées, des noms de table inconnues, etc.
+sont appelées <em>database errors</em> et
+seront signalés par la fonction/méthode retournant <code>nil</code> suivie
+par le message d'erreur fourni par le système de base de données.
+
+Les erreurs telles que des paramètres erronés, des connexion manquantes, des objets invalides, etc.
+sont appelées <em>API errors</em>,
+sont généralement des erreurs de programme et seront remonté par une erreur Lua.
 </p>
 <p>
 This behavior will be followed by all functions/methods
