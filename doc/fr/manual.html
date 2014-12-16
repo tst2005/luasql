@@ -137,9 +137,9 @@ décrites dans le présent document, sauf indication contraire.
 <h2><a name="drivers"></a>Pilotes</h2>
 
 <p>
-A LuaSQL driver allows the use of the LuaSQL API with a database management system
-that corresponds to the driver. To use a driver you have to load it.
-The example below
+Un pilote LuaSQL permet l'utilisation de l'API LuaSQL avec un système de gestion de base de données
+qui correspond au pilote.  Pour utiliser un pilote vous devez le charger.
+L'exemple ci-dessous
 </p>
 
 <pre class="example">
@@ -147,9 +147,9 @@ local driver = require "luasql.odbc"
 </pre>
 
 <p>
-loads the ODBC driver and returns a table with an entry with the name of the
-driver (<code>odbc</code> in this case). Note that you can have more than one
-driver loaded at the same time doing something like:
+charge le pilote ODBC et retourne une table avec une entrée avec le nom du
+pilote (<code>odbc</code> dans ce cas).  Notez que vous pouvez avoir plus d'un
+pilote chargé en même temps en faisant quelque chose comme :
 </p>
 
 <pre class="example">
@@ -158,17 +158,17 @@ local oci8_driver = require "luasql.oci8"
 </pre>
 
 <p>
-This example also shows that the driver name not always correspond to the
-Database name, but to the driver name in the file system. Since it refers to
-the OCI8 API, the Oracle driver has the name <code>oci8</code>.
+Cet exemple montre également que le nom du pilote ne correspond pas toujours au
+nom de la base de données, mais au nom du pilote dans le système de fichiers. Depuis qu'il se base sur
+l'API OCI8, le pilote Oracle a le nom <code>oci8</code>.
 </p>
 
 <h2><a name="environment_object"></a>Objets d'environnement</h2>
 
-<p>An environment object is created by calling the driver's initialization
-function that is stored in the table returned when it was loaded, indexed
-with the same name as the driver (odbc, postgres etc). The following example,
-will try to create an environment object using the ODBC driver.
+<p>Un objet d'environnement est créé en appelant la fonction d'initialisation du pilote
+qui est stocké dans le tableau retourné quand il a été chargé, indexé
+avec le même nom que le pilote (odbc, postgres etc). L'exemple suivant,
+va essayer de créer un objet d'environnement en utilisant le pilote ODBC.
 </p>
 
 <pre class="example">
@@ -177,7 +177,7 @@ local env = driver.odbc()
 </pre>
 
 
-<h4>Methodes</h4>
+<h4>Méthodes</h4>
 
 <dl class="reference">
 
@@ -209,7 +209,7 @@ A connection object is created by calling the
 <code><a href="#env_connect">environment:connect</a></code>
 method.</p>
 
-<h4>Methods</h4>
+<h4>Méthodes</h4>
 
 <dl class="reference">
 
@@ -263,7 +263,7 @@ function.
 See also <a href="#postgres_extensions">PostgreSQL</a>
 and <a href="#oracle_extensions">Oracle</a> extensions.</p>
 
-<h4>Methods</h4>
+<h4>Méthodes</h4>
 
 <dl class="reference">
 
